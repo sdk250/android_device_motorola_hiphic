@@ -51,12 +51,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration_7_0.xml
 
 # Boot control
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl-qti.recovery \
-    bootctrl.hiphic.recovery
+# PRODUCT_PACKAGES += \
+#     android.hardware.boot@1.2-impl-qti.recovery \
+#     bootctrl.hiphic.recovery
 
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
+# PRODUCT_PACKAGES_DEBUG += \
+#     bootctl
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
