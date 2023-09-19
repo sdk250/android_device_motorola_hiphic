@@ -5,11 +5,11 @@ system_ext/lib/com.qualcomm.qti.ant@1.0.so
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 
 # Bluetooth (aptX) - from sunfish RQ1A.201205.008
-system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
-system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
+system_ext/lib64/libaptX_encoder.so
+system_ext/lib64/libaptXHD_encoder.so
 
 # Dolby-Audio - Patched
--product/preinstall/MotoDolbyDax3/MotoDolbyDax3.apk:product/app/MotoDolbyDax3/MotoDolbyDax3.apk|42150d1e42b3f8f8fb0c66f15c03f162ebc71ce8
+-product/preinstall/MotoDolbyDax3/MotoDolbyDax3.apk:product/app/MotoDolbyDax3/MotoDolbyDax3.apk
 
 # Dolby-Audio
 -system_ext/priv-app/daxService/daxService.apk
@@ -51,19 +51,19 @@ product/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml
 product/etc/permissions/com.motorola.camera3.xml
 product/etc/permissions/com.motorola.camera3.content.ai.xml
 product/etc/permissions/com.motorola.camera3.hiphic.xml
-product/priv-app/MotCamera3/MotCamera3.apk;OVERRIDES=Aperture;PRESIGNED
+product/priv-app/MotCamera4/MotCamera4.apk;OVERRIDES=Aperture;PRESIGNED
 system_ext/bin/motsettings
-system_ext/etc/permissions/com.motorola.androidx.camera.extensions.xml
-system_ext/framework/com.motorola.androidx.camera.extensions.jar
-system_ext/etc/public.libraries-motocamera.txt
-system_ext/lib/libmcf_native_window_helper.motocamera.so
-system_ext/lib64/libmcf_native_window_helper.motocamera.so
+# system_ext/etc/permissions/com.motorola.androidx.camera.extensions.xml
+# system_ext/framework/com.motorola.androidx.camera.extensions.jar
+# system_ext/etc/public.libraries-motocamera.txt
+# system_ext/lib/libmcf_native_window_helper.motocamera.so
+# system_ext/lib64/libmcf_native_window_helper.motocamera.so
 
 # Moto Permissions
 product/etc/permissions/com.motorola.moto-uirefresh.xml
 product/etc/permissions/com.motorola.motodisplay.xml
 product/etc/permissions/privapp-permissions-com.motorola.motodisplay.xml
-system_ext/etc/permissions/com.motorola.androidx.camera.extensions.xml
+# system_ext/etc/permissions/com.motorola.androidx.camera.extensions.xml
 etc/permissions/com.motorola.frameworks.core.addon.xml
 
 # Moto libs
@@ -100,8 +100,10 @@ product/etc/permissions/UimService.xml
 product/framework/uimgbalibrary.jar
 product/framework/uimgbamanagerlibrary.jar
 product/framework/uimservicelibrary.jar
+
 -system_ext/app/QtiTelephony/QtiTelephony.apk
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
+
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
@@ -113,7 +115,7 @@ system/etc/permissions/moto-telephony.xml:system_ext/etc/permissions/moto-teleph
 system/framework/moto-telephony.jar:system_ext/framework/moto-telephony.jar
 
 # RIL - IMS (APK) - from patched source
--system_ext/priv-app/ims/ims.apk|64e248703f73db42d7fd8d0bab90e8941280268f
+-system_ext/priv-app/ims/ims.apk
 
 # RIL - IMS
 -system_ext/app/ImsRcsService/ImsRcsService.apk
@@ -133,3 +135,12 @@ system_ext/lib64/libdiag_system.so
 system_ext/lib64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
+
+system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar
+system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar
+system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar
+system_ext/lib/vendor.qti.diaghal@1.0.so
+system_ext/lib64/vendor.qti.diaghal@1.0.so
+system/etc/permissions/moto-ims-ext.xml
+system/framework/moto-ims-ext.jar
+system_ext/framework/qti-telephony-hidl-wrapper.jar
