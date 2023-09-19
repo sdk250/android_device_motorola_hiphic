@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PREBUILT_PATH := device/motorola/hiphi-prebuilt
+DEVICE_PREBUILT_PATH := device/motorola/hiphic-prebuilt
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
@@ -16,7 +16,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/motorola/hiphi/hiphi-vendor.mk)
+$(call inherit-product, vendor/motorola/hiphic/hiphic-vendor.mk)
 
 # AAPT
 # Device uses high-density artwork where available
@@ -53,7 +53,7 @@ PRODUCT_COPY_FILES += \
 # Boot control
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti.recovery \
-    bootctrl.hiphi.recovery
+    bootctrl.hiphic.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
@@ -66,7 +66,7 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.recovery.usb.rc \
-    init.hiphi.rc \
+    init.hiphic.rc \
     init.recovery.qcom.sh
 
 # fastbootd

@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_hiphi.mk
+    $(LOCAL_DIR)/aosp_hiphic.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_hiphi-eng \
-    aosp_hiphi-userdebug \
-    aosp_hiphi-user
+    aosp_hiphic-eng \
+    aosp_hiphic-userdebug \
+    aosp_hiphic-user

@@ -14,8 +14,8 @@
 // limitations under the License.
 //
 cc_library_static {
-    name: "libinit_hiphi",
-    srcs: ["init_hiphi.cpp"],
+    name: "libinit_hiphic",
+    srcs: ["init_hiphic.cpp"],
     whole_static_libs: ["libbase"],
     recovery_available: true,
     include_dirs: [

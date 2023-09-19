@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=hiphi
+DEVICE=hiphic
 VENDOR=motorola
 
 # Load extract_utils and do some sanity checks
