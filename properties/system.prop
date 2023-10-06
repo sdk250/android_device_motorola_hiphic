@@ -32,7 +32,7 @@ ro.qcom.ims.use_moto_vt_ext=true
 ro.iorapd.enable=false
 
 # Media
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+media.settings.xml=/vendor/etc/media_profiles_taro.xml
 media.stagefright.enable-aac=true
 media.stagefright.enable-fma2dp=true
 media.stagefright.enable-http=true
